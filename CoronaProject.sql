@@ -3,7 +3,7 @@ SELECT location, date, total_cases, new_cases, total_deaths, population
 from PortfolioProject..CovidDeaths
 order by 1,2
 
--- Finding Total Cases vs Total Deaths :\
+-- Finding Total Cases vs Total Deaths
 SELECT location,date, total_cases, total_deaths, (total_deaths/total_cases)*100 AS DeathPercentage
 from PortfolioProject..CovidDeaths
 order by 1,2
